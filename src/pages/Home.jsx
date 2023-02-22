@@ -82,59 +82,42 @@ export default function Home() {
         delay: 0.5,
       });
   };
-  const slideInLeft = (elem, delay, duration) => {
+  const slideAppear = (elem, delay, duration) => {
     gsap.fromTo(
       elem,
       {
-        opacity: 1,
-        x: -10000,
+        opacity: 0,
       },
       {
-        x: 0,
-        delay: delay || 0.15,
-        duration: duration || 1.5,
+        opacity: 1,
+        delay: delay || 0.6,
+        duration: duration || 1.8,
         scrollTrigger: {
           trigger: elem,
         },
       }
     );
   };
-  const slideInRight = (elem, delay, duration) => {
-    gsap.fromTo(
-      elem,
-      {
-        opacity: 1,
-        x: 10000,
-      },
-      {
-        x: 0,
-        delay: delay || 0.15,
-        duration: duration || 1.5,
-        scrollTrigger: {
-          trigger: elem,
-        },
-      }
-    );
-  };
+  
 
   useEffect(() => {
     onLoad();
   }, []);
 
   useEffect(() => {
-    slideInLeft("#apropos-container");
+    slideAppear("#apropos-container");
   }, []);
 
   useEffect(() => {
-    slideInRight(".parcours-container");
+    slideAppear(".parcours-container");
   }, []);
 
   useEffect(() => {
-    slideInLeft(".competences-container");
+    slideAppear(".competences-container");
   }, []);
 
   useEffect(() => {
-    slideInRight(".contact-container");
+    slideAppear(".contact-container");
   }, []);
 
   return (

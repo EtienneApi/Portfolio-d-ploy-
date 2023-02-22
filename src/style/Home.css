@@ -5,11 +5,11 @@
 }
 body {
   margin: 0;
-  background: url(../assets/Images/background.jpg)20% fixed no-repeat;
-  background-size: 100vw 100vh;
   overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
+}
+.all-container{
+  background: url(../assets/Images/background.jpg) 20% fixed;
+  background-size: cover;
 }
 body::-webkit-scrollbar-thumb {
   background-color: #f47121;
@@ -19,12 +19,12 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 @media screen and (max-width: 768px) {
- body {
-  background-size: contain cover;
-  overflow-x: hidden;
-  width: 100vw;
-  height: 00%;
- }
+  body {
+   
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /********* CSS DU HEADER ****************/
