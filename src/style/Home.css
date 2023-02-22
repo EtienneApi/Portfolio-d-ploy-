@@ -19,9 +19,6 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 @media screen and (max-width: 768px) {
-  body {
-   
-  }
   body::-webkit-scrollbar {
     display: none;
   }
@@ -61,7 +58,7 @@ body::-webkit-scrollbar {
 
 .title-header-container {
   position: relative;
-  top: -75vh;
+  top: -80vh;
   border: 3px solid rgb(199, 198, 198);
   width: 80vw;
   height: 53vh;
