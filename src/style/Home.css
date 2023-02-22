@@ -85,7 +85,7 @@ body::-webkit-scrollbar {
 .arrow-header {
   width: 40px;
   position: relative;
-  top: -63vh;
+  top: -75vh;
   margin: 0;
   box-shadow: 0 0 0 0 #000;
   animation: pulse 3s ease infinite;
